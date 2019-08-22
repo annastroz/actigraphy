@@ -201,7 +201,7 @@ def fit_curvefit(p0, datax, datay, function, yerr=0):
     p0 – vector of initial guesses for amplitude, phase and mesor.
     datax, datay – vector of time and MVM.
     function – model function, here sinusoidal. (defined as the function f)
-    
+    This function was made with the help of Stackoverflow community (see thread: https://stackoverflow.com/questions/16716302/how-do-i-fit-a-sine-curve-to-my-data-with-pylab-and-numpy/26512495)
     '''
 
     pfit, pcov = curve_fit(f,datax,datay,p0=p0, epsfcn=0.0001)
